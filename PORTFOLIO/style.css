@@ -6,8 +6,15 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 header {
   overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .info-container {
