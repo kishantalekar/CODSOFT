@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Quicksand&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  overflow: hidden;
+}
+
+.info-container {
+  /* background-color: rgb(151, 160, 65); */
+  /* height: 58vh; */
+  width: 80vw;
+  margin: 104px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.div-pic img {
+  height: 58vh;
+  /* border-radius:0%; */
+}
+
+.div-info {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Source Code Pro", monospace;
+  padding-left: 100px;
+  /* line-height:normal; */
+}
+
+.hello {
+  font-size: 50px;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.about {
+  font-size: 25px;
+  line-height: 1.5rem;
+}
+
+.more-about {
+  font-size: 15px;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.5rem;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px;
+  color: white;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 0px 3px;
+  background-color: cadetblue;
+  cursor: pointer;
+}
+.btn-sm {
+  margin-top: 10px;
+}
+.btn:hover {
+  background-color: white;
+  color: cadetblue;
+}
+
+.side-bar {
+  background-color: rgb(211, 207, 207);
+  /* width: 300px; */
+  height: 100vh;
+  font-family: "Fira Sans", sans-serif;
+  transition: transform 0.3s ease-in;
+  position: absolute;
+}
+.side-barGo {
+  position: absolute;
+  transform: translate(-400px, 0);
+}
+.side-bar-nav {
+  padding: 32px;
+  font-size: 15px;
+}
+
+.side-bar nav li {
+  list-style: none;
+  padding: 15px;
+}
+
+.side-bar nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  /* background-color: yellow; */
+  width: 90vw;
+}
+
+.container {
+  display: flex;
+}
+
+/* contact me form  */
+.contact-me {
+  font-family: "Fira Sans", sans-serif;
+  padding: 106px 45px 0;
+  margin-left: 150px;
+}
+
+.contact-me h1 {
+  font-family: "Source Code Pro", monospace;
+
+  margin-bottom: 30px;
+}
+
+.contact-me form div {
+  padding: 8px 0;
+}
+
+#emailHelp {
+  font-size: 8px;
+  margin: 0 10px;
+  color: chocolate;
+  padding: 5px 3px 2px;
+}
+.mb-3 {
+  display: flex;
+  flex-direction: column;
+}
+.form-control {
+  width: 20vw;
+  border-radius: 10px;
+  height: 20px;
+  padding: 3px;
+}
+
+/* blog page  */
+.blogContainer {
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 50px;
+}
+.blogContainer h1 {
+  margin: 19px;
+}
+.blogItem {
+  margin: 20px;
+}
+.blogItem p {
+  font-family: "Source Code Pro", monospace;
+}
+
+/* about me  */
+.intro {
+  margin-left: 200px;
+  margin-top: 60px;
+}
+.intro h2 {
+  font-family: "Fira Sans", sans-serif;
+  margin: 20px 0;
+}
+.intro p {
+  font-family: "Source Code Pro", monospace;
+  margin: 10px 0;
+  font-weight: 500;
+}
+.skill {
+  width: 200px;
+  height: 15px;
+
+  border: 2px solid black;
+}
+.skillItem {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.html {
+  background-color: rgb(247, 99, 46);
+}
+.css {
+  background-color: rgb(45, 114, 241);
+}
+.javascript {
+  background-color: gold;
+}
+.problemSolving {
+  background-color: rgb(16, 155, 85);
+}
+.dedication {
+  background-color: deepskyblue;
+}
+
+.hamBurger {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  margin: 10px 0 20px 10px;
+}
+.cross {
+  margin-left: 125px;
+}
+
+@media (max-width: 1140px) {
+  .div-pic {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro {
+    margin-left: 50px;
+  }
+  .contact-me {
+    padding-left: 50px;
+    margin-left: 0;
+    /* padding-right: 20px; */
+  }
+  .div-info {
+    padding-left: 50px;
+  }
+  .form-control {
+    width: 70% !important;
+  }
+  .contact-me h1 {
+    font-size: 22px !important;
+    font-family: "Fira Sans", sans-serif;
+  }
+  .form-check-label {
+    font-size: 10px !important;
+  }
+}
